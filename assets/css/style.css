@@ -6,16 +6,32 @@
     text-transform: uppercase;
 }
 
-.general-sub {
-    font-family: "Exo", sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    color: #fafafa;
-}
 
 .inline-block {
     display: inline-block;
 }
+
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    text-align: center;
+}
+
+
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
+
+
+.row-table {
+    display: table;
+}
+
 
 /*-------------------------------------Header*/
 
@@ -26,8 +42,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 134px;
-    height: 100px;
+    width: 80px;
+    height: 60px;
     margin: 0;
     padding: 0;
     transition: all .5s ease-in-out;
@@ -39,29 +55,37 @@
     padding: 0;
     margin: 0;
     background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    height: 70px;
 }
 
-.nav {
-    float: right;
-    margin-top: 50px;
+
+.navbar-collapse {
     font-family: "Roboto", sans-serif;
     font-weight: 200;
     font-size: 20px;
+    color: #302b2b;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    margin-top: -40px;
 }
 
 /*-------------------------------------Callout*/
 
 .callout-container {
-    height: 100vh;
-    z-index: 0;
-    background: url("../images/blaskets.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    align-items: center;
     position: relative;
+    vertical-align: middle;
+    height: 100%;
+    z-index: 0;
+    background-image: url("../images/blaskets.jpg") no-repeat center center relative;
+    background-size: cover;
 }
 
 /*-------------------------------------Info-section*/
@@ -69,7 +93,7 @@
 .info-container {
     width: 100%;
     height: 400px;
-    background-color: #FE000D;
+    background-color: #fafafa;
 }
 
 .team {
@@ -88,6 +112,34 @@
     margin: 0px;
 }
 
+/*----------------------------------About*/
+
+.about {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.about-plus {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about-heading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.about-para {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
 
 /*----------------------------------Jumbotron*/
 
@@ -110,6 +162,10 @@ footer {
     color: #ffffff;
     min-height: 120px;
     margin: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .social-links {
